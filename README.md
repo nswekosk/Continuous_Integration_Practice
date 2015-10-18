@@ -6,5 +6,6 @@ This is for practicing on a CI environment. Start here: http://technologyconvers
 3. Create a Ubuntu Docker container with Jenkins by way of a Dockerfile.
 4. Upload the Dockerfile to our git repo and configure Docker Hub.
 	- This will build the container every time we change contents of that file.
-	- Docker Hub is a registry for our images. 
-	- 
+	- Docker Hub is a registry for our images.
+5. Use Ubuntu VM and Jenkins together.
+	- Specify in our Vagrantfile that we want our container to be set and run every time we start the VM.
