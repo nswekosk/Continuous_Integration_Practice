@@ -16,8 +16,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
   config.vm.provision "docker" do |d|
-    d.run "nswekosk/practicebuild",
-       args: "-d -p 0.0.0.0:49153:8080"
+    d.run "nswekosky/practicebuild",
+      args: "-d -p 0.0.0.0:49153:8080"
   end
   config.vm.network :forwarded_port, host: 4567, guest: 49153
 
