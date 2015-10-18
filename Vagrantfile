@@ -16,12 +16,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
   config.vm.provision "docker" do |d|
-	d.run "nswekosk/practice",
-		args: "-d -p 0.0.0.0:49153:8080"
+    d.run "nswekosk/practice",
+       args: "-d -p 0.0.0.0:49153:8080"
   end
-  config.vm.network :forwarded_port, host: 4567, guest:49153
-
-
+  config.vm.network :forwarded_port, host: 4569, guest: 49153
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
