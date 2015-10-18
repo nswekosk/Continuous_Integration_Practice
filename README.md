@@ -9,3 +9,7 @@ This is for practicing on a CI environment. Start here: http://technologyconvers
 	- Docker Hub is a registry for our images.
 5. Use Ubuntu VM and Jenkins together.
 	- Specify in our Vagrantfile that we want our container to be set and run every time we start the VM.
+
+
+If all else fails, author of blog post recommends following website:
+	- https://hub.docker.com/_/jenkins/
