@@ -12,11 +12,10 @@ EXPOSE 8080
 VOLUME ["/jenkins"]
 CMD [""]
 
+
 # GIT
-#
-
 RUN apt-get install -q -y git
-
+ 
 # Gradle
 ADD https://services.gradle.org/distributions/gradle-1.12-all.zip /opt/gradle-1.12-all.zip
 RUN unzip /opt/gradle-1.12-all.zip -d /opt/
