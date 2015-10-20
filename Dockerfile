@@ -18,7 +18,7 @@ CMD [""]
 RUN apt-get install -q -y git
 
 # Gradle
-ADD https://services.gradle.org/distributions/gradle-1.12-all.ziop /opt/gradle-1.12-all.zip
+ADD https://services.gradle.org/distributions/gradle-1.12-all.zip /opt/gradle-1.12-all.zip
 RUN unzip /opt/gradle-1.12-all.zip -d /opt/
 ENV GRADLE_HOME /opt/gradle-1.12
-ENV PATH $PATH:$GRALDE_HOME/bin
+ENV PATH $PATH:$GRADLE_HOME/bin
