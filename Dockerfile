@@ -13,6 +13,8 @@ VOLUME ["/jenkins"]
 CMD [""]
 
 # GIT
+#
+
 RUN apt-get install -q -y git
 
 # Gradle
